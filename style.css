@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+
+:root{
+    --gfont: 'Yusei Magic',
+    sans-serif;
+}
+/* Write some CSS below */
+html{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+.banner {
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10rem;
+}
+
+.banner .banner__image {
+    width: 100%;
+    height: 600px;
+    background-size:  cover;
+}
+
+.banner .banner__title {
+    position:  absolute;
+    bottom: 30%;
+    color: white;
+    letter-spacing: 2px;
+    font-size: 2.5rem;
+    font-family: var(--gfont);
+}
+
+.banner__button--visit-store {
+    position: absolute;
+    bottom: 20%;
+    background-color: #161d6f;
+    border: none;
+    outline: none;
+    padding: 10px 25px;
+    width: 10rem;
+    letter-spacing: 2px;
+    font-family: var(--gfont);
+    color: white;
+    transition:all .3s ease;
+}
+
+.banner__button--visit-store:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}
+.banner__button--visit-store:active {
+    transform: translateY(2px);
+    opacity: 1;
+}
+
+#card-section {
+    display: flex;
+    width: 100%;
+    font-family: var(--gfont);
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#card-section .card {
+    width: 400px;
+    margin: 50px;
+}
+#card-section .card img{
+    width: 400px;
+}
+
+footer {
+    display: flex;
+    background-color: black;
+    color: white;
+    height: 100px;
+    font-family: var(--gfont);
+    justify-content:space-around;
+    align-items: center;
+}
